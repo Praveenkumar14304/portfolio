@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Praveenkumar A</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Praveenkumar A</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Profile.jpeg" alt="Praveen profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Praveenkumar A</h1>
+        <p class="section__text__p2">AI & Python Developer</p>        
+        <div class="btn-container">
+          <a class="btn btn-color-2" href="./assets/Praveeenkumar_A.pdf" target="_blank" rel="noopener noreferrer">
+            Download CV
+          </a>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/praveenkumar1420/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/Praveenkumar14304', '_blank')"
+          />
+        </div>
+      </div>
+      <!-- Right arrow for next section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow arrow-right"
+        onclick="location.href='./#about'"
+      />
+    </section>
+
+    <section id="about">
+      <!-- Left arrow for previous section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow arrow-left"
+        onclick="location.href='./#profile'"
+      />
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Candid.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Internship <br />AI\ML Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E -Computer Science Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a Computer Science Engineering graduate skilled in AI/ML
+              model development, SQL,PL/SQL, and data analysis. I have handson experience from an developing AI/ML projects, where I worked
+              on developing and deploying ML models. I also have foundational
+              knowledge of LLMs and RAG, and experience creating Power BI
+              dashboards and Excel-based analytics to drive data-driven insights !!!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Right arrow for next section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow arrow-right"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <!-- Left arrow for previous section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow arrow-left"
+        onclick="location.href='./#about'"
+      />
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container">
+            <h2 class="experience-sub-title">AI/ML </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ML Model</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>LLMs/Huggingface</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Rag</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NLP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>OpenCV</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Analytics & DB Development </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Oracle SQL</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PL/SQL</h3>
+                  <p>Advanced </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Excel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PowerBI</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right arrow for next section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow arrow-right"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <!-- Left arrow for previous section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow arrow-left"
+        onclick="location.href='./#experience'"
+      />
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <!-- Skills Box (Top) -->
+        <div class="skills-box">
+          <div class="box-header">
+            <h2 class="vertical-title">Skills & Technology</h2>
+          </div>
+          <div class="box-content">
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-python skill-icon" style="color: #3776AB;"></i>
+                <p>Python</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-bar skill-icon" style="color: #4CAF50;"></i>
+                <p>NumPy</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-table skill-icon" style="color: #150458;"></i>
+                <p>Pandas</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database skill-icon" style="color: #F80000;"></i>
+                <p>Oracle SQL</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-server skill-icon" style="color: #336791;"></i>
+                <p>PL/SQL</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-robot skill-icon" style="color: #FF6B6B;"></i>
+                <p>AI/ML Models</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-brain skill-icon" style="color: #4A90E2;"></i>
+                <p>NLP</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-file-excel skill-icon" style="color: #217346;"></i>
+                <p>Excel</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-line skill-icon" style="color: #F2C811;"></i>
+                <p>Power BI</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-language skill-icon" style="color: #8E44AD;"></i>
+                <p>LLMs</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-search skill-icon" style="color: #FFA500;"></i>
+                <p>RAG</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-flask skill-icon" style="color: #000000;"></i>
+                <p>Flask</p>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-window-restore skill-icon" style="color: #0066CC;"></i>
+                <p>Tkinter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Software Box (Bottom) -->
+        <div class="skills-box">
+          <div class="box-header">
+            <h2 class="vertical-title">Software</h2>
+          </div>
+          <div class="box-content">
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fas fa-database skill-icon" style="color: #6C3483;"></i>
+                <p>Toad</p>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-docker skill-icon" style="color: #2496ED;"></i>
+                <p>Docker</p>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github skill-icon" style="color: #181717;"></i>
+                <p>GitHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right arrow for next section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow arrow-right"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <!-- Left arrow for previous section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow arrow-left"
+        onclick="location.href='./#skills'"
+      />
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project 1 - Kidney Tumor Detection -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Kidney Tumor Detection</h2>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="article-container">
+                    <img
+                      src="./assets/KTDS.png"
+                      alt="Kidney Tumor Detection"
+                      class="project-img"
+                    />
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <div class="project-description">
+                    <!-- <h3>Project Overview</h3> -->
+                    <p>An AI-powered medical imaging solution that uses deep learning to detect kidney tumors from CT scans with high accuracy. Built with Python, TensorFlow, and OpenCV.</p>
+                    <div class="tech-used">
+                      <span class="tech-tag">Python</span>
+                      <span class="tech-tag">TensorFlow</span>
+                      <span class="tech-tag">OpenCV</span>
+                      <span class="tech-tag">CNN</span>
+                      <span class="tech-tag">YOLO v8</span>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Praveenkumar14304/Kideny_Tumor_Detection', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2 - Placeholder -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-2.png"
+                      alt="Project Two"
+                      class="project-img"
+                    />
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <div class="project-description">
+                    <h3>Project Overview</h3>
+                    <p>Description of project two goes here. This section would contain details about the technologies used, challenges overcome, and results achieved.</p>
+                    <div class="tech-used">
+                      <span class="tech-tag">Technology</span>
+                      <span class="tech-tag">Framework</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3 - Placeholder -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-3.png"
+                      alt="Project Three"
+                      class="project-img"
+                    />
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <div class="project-description">
+                    <h3>Project Overview</h3>
+                    <p>Description of project three goes here. This section would contain details about the technologies used, challenges overcome, and results achieved.</p>
+                    <div class="tech-used">
+                      <span class="tech-tag">Technology</span>
+                      <span class="tech-tag">Framework</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right arrow for next section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow arrow-right"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <!-- Left arrow for previous section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow arrow-left"
+        onclick="location.href='./#projects'"
+      />
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=praveenarul004@gmail.com&su=Contacting through%20Portfolio&body=Hello%20Praveen," target="_blank">Click_here_for_gmail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/praveenkumar1420/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; Praveenkumar A . All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
